@@ -134,6 +134,8 @@ function anwser() {
         document.getElementById("title").innerText=RESULTS_MAP[maxptr].title;
         document.getElementById("contents").innerText=RESULTS_MAP[maxptr].contents;
     }
+    document.getElementById("top").scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"});
+
 }
 function restart(){
     finalanswer=[];
@@ -151,4 +153,5 @@ function restart(){
             unselected:false
         }
     }
+    document.getElementById("top").scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
 }
